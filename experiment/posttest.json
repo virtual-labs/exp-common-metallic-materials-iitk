@@ -2,12 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1. Composition of Muntz metal",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "60Cu-40Zn",
+        "b": "90Cu-10Zn",
+        "c": "50Cu-50Zn",
+        "d": "70Cu-30Zn"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -19,12 +19,63 @@
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "2. The alloy used for knee and hip joint implants",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Ti-4Al-6V",
+        "b": "Ti-6Al-4V",
+        "c": "Ti-3Al-3V",
+        "d": "Ti-2Al-4V"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Annealing twins are found in",
+      "answers": {
+        "a": "Aluminium",
+        "b": "Magnesium",
+        "c": "Copper",
+        "d": "Titanium"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Casting is easier for nonferrous metals due to",
+      "answers": {
+        "a": "Higher melting point",
+        "b": "Lower melting point",
+        "c": "Both above",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. The addition of silicon in aluminium improves its",
+      "answers": {
+        "a": "Castability",
+        "b": "Wear resistance",
+        "c": "Both above",
+        "d": "None of the above"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
