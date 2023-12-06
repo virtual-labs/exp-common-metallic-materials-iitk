@@ -1,5 +1,5 @@
 <b>1.</b> The term non-ferrous alloys are used for those alloys which do not have iron as a base element. Generally, the non-ferrous alloys commonly used in engineering application are based on aluminium, copper, magnesium, titanium etc. The microstructures of these non-ferrous alloys are highly diversified in nature and are dependent on their composition and processing method. Understanding of these microstructures is crucial for tailoring material properties for specific applications in aerospace, automotives, and electrical industries.  <br><br>
-<b>1.1 </b>The advantages of Non-ferrous alloys over ferrous alloys are as follows:<br> 
+<b>1.1 The advantages of Non-ferrous alloys over ferrous alloys are as follows:</b><br> 
 * Good resistance to corrosion without special processes having to be carried out.<br> 
 * Non-ferrous alloys usually have low density and hence used in manufacturing lighter weight components.<br>  
 * Manufacturing is easier as casting can be done because of their lower melting point. <br>  
