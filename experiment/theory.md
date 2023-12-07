@@ -28,7 +28,7 @@ Copper is essential for modern living. It delivers electricity and clean water i
 <b>4 Microstructure of Brass and Bronze</b><br>
 <image src="images/Picture5.png" width="250" height="250" alt="">
 <image src="images/Picture6.png" width="250" height="250" alt="">
-<image src="images/Picture7.png" width="350" height="350" alt=""><br>
+<image src="images/Picture7.png" width="450" height="350" alt=""><br>
 <b>Figure 3.</b> Microstructure of (a) 70-30 brass, (b) 60-40 brass, (c) Bronze. <br><br>
 Brass is an alloy of copper and zinc, whereas bronze is an alloy of copper and tin. Copper-zinc alloys, known as brass, exhibit a two-phase microstructure. They consist of an alpha phase (copper-rich) and a beta phase (zinc-rich). The proportions of these phases determine the alloy's properties. Brass is obtained in different forms. Such as alpha brass (with 36% zinc) and alpha-beta brass. Brass is also found in two essential forms known as 60-40 brass and 70-30 brass. In 60-40 brass, 60 wt.% is the percentage of copper, and 40wt.% is the weight percentage of zinc. Brass contains zinc as the principal alloying element. Brass is mainly categorized into three different types: (1) Cu-Zn alloys, (2) Cu-Pb-Zn alloys or led brasses (c) Cu-Zn-Sn alloys or tin brasses. Brasses have high corrosion resistance, and it is readily machinable. It also acts as a good bearing material. Zinc in the brass increases the ductility along with strength. Brass possesses greater strength than copper. However, it has a lower thermal and electrical conductivity. Types of brass are discussed below:<br><br>
 <b>4.1 Alpha brass</b><br>
