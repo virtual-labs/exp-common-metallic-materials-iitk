@@ -8,7 +8,7 @@
 
 The mechanical properties of non-ferrous materials can be improved by using different types of heat treatment such as solution treatment, ageing, and precipitation hardening. Besides, they also possess features such as, high-temperature properties, oxidation and corrosion resistance, biocompatibility, thermal conductivity, and electrical conductivity. <br>
 
-<b>2 Microstructure of Aluminium: </b><br>
+<b>2 Microstructure of Aluminium </b><br>
 <image src="images/Picture1.png" width="250" height="250" alt="">
 <image src="images/Picture2.png" width="250" height="250" alt=""><br>
 <b>Figure 1.</b> Optical microstructure of (a) annealed aluminium (b) rolled aluminium. <br><br>
@@ -21,7 +21,7 @@ Aluminium-magnesium alloys have hexagonal close-packed (HCP) crystal structures,
 <b>2.3  Al-Si Alloys</b><br> 
 Aluminium-silicon alloys have a dendritic microstructure, with silicon forming discrete particles within the aluminum matrix, enhancing its wear resistance and castability. <br><br>
 Figure 1 shows two different types of microstructures of aluminum in annealed and rolled conditions. Figure 1(a) shows the microstructure of the aluminum in an annealed condition characterized by larger grains with distinctive grain boundaries. Annealing is a typical heat treatment used to relieve the presence of any internal stresses in the microstructures and thereby improve the mechanical properties of the alloy system. This improves the ductility and formability of the aluminum alloy by annihilating the dislocations. This heat treatment makes aluminum alloys for meeting specific applications, including aerospace, automotive, and construction applications, where light weight, corrosion resistance, and enhanced foamabilities are the most widely used properties. Figure 1(b) shows the rolled aluminum microstructure characterized by distinctive grain structural alignments resulting from rolling. Rolling operation elongates the grains along the rolling directions due to the applications of mechanical forces during the rolling operations. This type of rolling operation produces preferred textures within the microstructures. The dislocation density in rolled aluminum is relatively high and causes an increase in the strength of the material. In summary, rolled aluminum exhibits a microstructure characterized by elongated and aligned grains along the rolling direction, forming a distinct texture. The alignment of grains, coupled with the reduction in grain size and the presence of dislocations, imparts specific mechanical and anisotropic properties to the material, making it suitable for various applications where strength, lightweight construction, and formability are essential considerations.<br><br>
-<b>3. Microstructure of Copper:</b><br>
+<b>3. Microstructure of Copper</b><br>
 <image src="images/Picture3.png" width="250" height="250" alt="">
 <image src="images/Picture4.png" width="250" height="250" alt=""><br>
 <b>Figure 2.</b> Microstructure of (a) annealed copper and (b) rolled copper.<br><br>
