@@ -16,7 +16,6 @@
 <b>•	Purpose:</b> Reveal grain boundaries, α and δ phases, and inclusions.<br>
 <b>•	Etchant:</b> Ammonium persulfate (5 g in 100 mL water)<br>
 <b>•	Procedure:</b> Etch briefly (5–30 s) until microstructure is visible. Rinse with water and ethanol, and then dry.<br>
-
 <b>Titanium (Ti) and Ti Alloys</b><br>
 <b>•	Purpose:</b> Highlight α and β phases, twins, and grain structure.<br>
 <b>•	Etchant:</b> Kroll’s reagent- 2–3 mL HF + 5–10 mL HNO₃ + 92–93 mL H₂O<br>
