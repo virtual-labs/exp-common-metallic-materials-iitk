@@ -29,7 +29,7 @@
             font-size: 22px;
             background-color: rgba(255, 255, 0, 0.481);
             margin: 5px;
-            padding: 10px;
+            padding: 30px;
         }
 
         .customer-service {
@@ -58,8 +58,38 @@
             padding: 20px;
         }
 
+        .question-box {
+            display: none;
+            background-color: #f2f2f2;
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+        }
+
+        /* create speechbubble  */
+        .popup {
+            position: relative;
+            text-align: center;
+            border-radius: 10px;
+
+        }
+
+        .popup:after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 0;
+            z-index: 1;
+            border-style: solid;
+            border-color: #000000 transparent;
+            border-width: 0 10px 50px;
+            top: -50px;
+            left: 50%;
+            margin-left: -10px;
+        }
+
         .kane-scene {
-            color: brown;
+            color: rgb(255, 255, 255);
         }
 
         .popup-button {
@@ -75,6 +105,14 @@
             color: green;
         }
 
+        .customer-requirement {
+            background-color: rgba(111, 48, 160, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid rgba(111, 48, 160, 0.944);
+            margin-bottom: 20px;
+        }
+
         #properties-1,
         #properties-2,
         #properties-3,
@@ -85,6 +123,18 @@
             width: 50%;
         }
 
+        .kane-name {
+            color: rgb(22 43 242);
+        }
+
+        .customer-name {
+            color: rgba(111, 48, 160, 0.944);
+        }
+
+        .you-name {
+            color: rgb(227, 11, 11);
+        }
+
         /*  Kane background color */
         #popup-scene-1,
         #popup-scene-5,
@@ -93,7 +143,7 @@
         #popup-scene-17,
         #popup-scene-21,
         #popup-scene-25 {
-            background-color: rgba(0, 128, 0, 0.433);
+            background-color: rgb(22 43 242);
         }
 
         /*  customer  background color */
@@ -104,17 +154,18 @@
         #popup-scene-18,
         #popup-scene-22,
         #popup-scene-26 {
-            background-color: rgba(255, 255, 0, 0.222);
+            background-color: rgb(112 48 160 / 74%);
         }
 
         /*  you  background color */
         #popup-scene-3,
         #popup-scene-7,
         #popup-scene-11,
-        #popup-scene-15 #popup-scene-19,
+        #popup-scene-15,
+        #popup-scene-19,
         #popup-scene-23,
         #popup-scene-27 {
-            background-color: rgba(128, 0, 128, 0.37);
+            background-color: rgba(227, 11, 11, 0.69);
         }
     </style>
 
@@ -129,17 +180,24 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="story">
-                    <p class="story-content"> Kane Green, Founder of a Non-Ferrous company NoFerX that solves customer
-                        problems and provides
-                        them
-                        with unique solutions of materials based on their application and needs. You are hired by Kane
-                        Green
-                        as head R & D expert on Materials division to solve materials related problems. Please solve
-                        some of
-                        the customer demands given below by choosing suitable metal and alloy along with correct
-                        properties
-                        needed for that application:
-                    </p>
+                    <ul class="story-content">
+                        <li>
+                            <span class="kane-name"> Kane Green </span>, Founder of a Non-Ferrous company NoFerX that
+                            solves customer problems and
+                            provides them with unique solutions of materials based on their application and needs.
+                        </li>
+                        <li>
+                            <span class="you-name"> You </span> are hired by Kane Green as head R & D expert on
+                            Materials division to solve materials
+                            related problems.
+                        </li>
+                        <li>
+                            Please solve some of the <span class="customer-name">customer </span> demands given below by
+                            choosing suitable metal and alloy
+                            along with correct properties needed for that application:
+                        </li>
+                    </ul>
+
                 </div>
                 <div class="popup-container">
                     <button class=" btn btn-success popup-button" onclick="startConversation()">Start</button>
@@ -153,51 +211,52 @@
                                 <div class="images-container">
                                     <img class="images" src="./images/kgreen.png" alt="" />
                                 </div>
+
                                 <!-- kance scene 1 -->
                                 <div id="popup-scene-1" class="popup">
-                                    <p class="kane-scene">Kane Green: "Tell me your problem."</p>
-                                    <button class="btn btn-danger popup-button"
+                                    <p class="kane-scene">Kane Green: Tell me your problem.</p>
+                                    <button class="btn btn-secondary popup-button"
                                         onclick="showPopup('popup-scene-2')">Next</button>
                                 </div>
 
                                 <!-- Kane scene 2 -->
                                 <div id="popup-scene-5" class="popup">
-                                    <p class="kane-scene">Kane Green: "Tell me your problem."</p>
-                                    <button class="btn btn-danger popup-button"
+                                    <p class="kane-scene">Kane Green: Tell me your problem.</p>
+                                    <button class="btn btn-secondary popup-button"
                                         onclick="showPopup('popup-scene-6')">Next</button>
                                 </div>
 
                                 <!-- Kane scene 3 -->
                                 <div id="popup-scene-9" class="popup">
-                                    <p class="kane-scene">Kane Green: "Tell me your problem."</p>
-                                    <button class="btn btn-danger popup-button"
+                                    <p class="kane-scene">Kane Green: Tell me your problem.</p>
+                                    <button class="btn btn-secondary popup-button"
                                         onclick="showPopup('popup-scene-10')">Next</button>
                                 </div>
                                 <!-- Kane scene 4 -->
                                 <div id="popup-scene-13" class="popup">
-                                    <p class="kane-scene">Kane Green: "Tell me your problem."</p>
-                                    <button class="btn btn-danger popup-button"
+                                    <p class="kane-scene">Kane Green: Tell me your problem.</p>
+                                    <button class="btn btn-secondary popup-button"
                                         onclick="showPopup('popup-scene-14')">Next</button>
                                 </div>
 
                                 <!-- Kane scene 5 -->
                                 <div id="popup-scene-17" class="popup">
-                                    <p class="kane-scene">Kane Green: "Tell me your problem."</p>
-                                    <button class="btn btn-danger popup-button"
+                                    <p class="kane-scene">Kane Green: Tell me your problem.</p>
+                                    <button class="btn btn-secondary popup-button"
                                         onclick="showPopup('popup-scene-18')">Next</button>
                                 </div>
 
                                 <!-- Kane scene 6 -->
                                 <div id="popup-scene-21" class="popup">
-                                    <p class="kane-scene">Kane Green: "Tell me your problem."</p>
-                                    <button class="btn btn-danger popup-button"
+                                    <p class="kane-scene">Kane Green: Tell me your problem.</p>
+                                    <button class="btn btn-secondary popup-button"
                                         onclick="showPopup('popup-scene-22')">Next</button>
                                 </div>
 
                                 <!-- Kane scene 7 -->
                                 <div id="popup-scene-25" class="popup">
-                                    <p class="kane-scene">Kane Green: "Tell me your problem."</p>
-                                    <button class="btn btn-danger popup-button"
+                                    <p class="kane-scene">Kane Green: Tell me your problem.</p>
+                                    <button class="btn btn-secondary popup-button"
                                         onclick="showPopup('popup-scene-26')">Next</button>
                                 </div>
                             </div>
@@ -208,50 +267,50 @@
                                 </div>
                                 <!--  Customer scene 1 -->
                                 <div id="popup-scene-2" class="popup">
-                                    <p class="customer-scene">Customer: "I want to make Hip implant and Knee joint."</p>
-                                    <button class="btn btn-danger popup-button"
+                                    <p class="customer-scene">Customer: I want to make Hip implant and Knee joint.</p>
+                                    <button class="btn btn-secondary popup-button"
                                         onclick="showPopup('popup-scene-3')">Next</button>
                                 </div>
 
                                 <!-- Customer scene 2 -->
                                 <div id="popup-scene-6" class="popup">
-                                    <p class="customer-scene">Customer: "I want to make Food packaging".</p>
-                                    <button class="btn btn-danger popup-button"
+                                    <p class="customer-scene">Customer: I want to make Food packaging.</p>
+                                    <button class="btn btn-secondary popup-button"
                                         onclick="showPopup('popup-scene-7')">Next</button>
                                 </div>
 
                                 <!-- Customer scene 3 -->
                                 <div id="popup-scene-10" class="popup">
-                                    <p class="customer-scene">Customer: "I want to make Plumbing components".</p>
-                                    <button class="btn btn-danger popup-button"
+                                    <p class="customer-scene">Customer: I want to make Plumbing components.</p>
+                                    <button class="btn btn-secondary popup-button"
                                         onclick="showPopup('popup-scene-11')">Next</button>
                                 </div>
 
                                 <!-- Customer scene 4 -->
                                 <div id="popup-scene-14" class="popup">
-                                    <p class="customer-scene">Customer: "I want to make Fuse caps".</p>
-                                    <button class="btn btn-danger popup-button"
+                                    <p class="customer-scene">Customer: I want to make Fuse caps.</p>
+                                    <button class="btn btn-secondary popup-button"
                                         onclick="showPopup('popup-scene-15')">Next</button>
                                 </div>
 
                                 <!-- Customer scene 5 -->
                                 <div id="popup-scene-18" class="popup">
-                                    <p class="customer-scene">Customer: "I want to make Condenser cooler ".</p>
-                                    <button class="btn btn-danger popup-button"
+                                    <p class="customer-scene">Customer: I want to make Condenser cooler.</p>
+                                    <button class="btn btn-secondary popup-button"
                                         onclick="showPopup('popup-scene-19')">Next</button>
                                 </div>
 
                                 <!-- Customer scene 6 -->
                                 <div id="popup-scene-22" class="popup">
-                                    <p class="customer-scene">Customer: "I want to make Lipstick cases".</p>
-                                    <button class="btn btn-danger popup-button"
+                                    <p class="customer-scene">Customer: I want to make Lipstick cases.</p>
+                                    <button class="btn btn-secondary popup-button"
                                         onclick="showPopup('popup-scene-23')">Next</button>
                                 </div>
 
                                 <!-- Customer scene 7 -->
                                 <div id="popup-scene-26" class="popup">
-                                    <p class="customer-scene">Customer: "I want to make Bearings".</p>
-                                    <button class="btn btn-danger popup-button"
+                                    <p class="customer-scene">Customer: I want to make Bearings.</p>
+                                    <button class="btn btn-secondary popup-button"
                                         onclick="showPopup('popup-scene-27')">Next</button>
                                 </div>
                             </div>
@@ -262,49 +321,49 @@
                                 </div>
                                 <!-- you scene 1 -->
                                 <div id="popup-scene-3" class="popup">
-                                    <p class="you-scene">You : "I have solution."</p>
-                                    <button class="btn btn-danger popup-button"
+                                    <p class="you-scene">You : I have a solution.</p>
+                                    <button class="btn btn-secondary popup-button"
                                         onclick="showPopup('popup-scene-4')">Next</button>
                                 </div>
 
                                 <!-- you scene 2 -->
                                 <div id="popup-scene-7" class="popup">
-                                    <p class="you-scene">You : "I have solution."</p>
-                                    <button class="btn btn-danger popup-button"
+                                    <p class="you-scene">You : I have a solution.</p>
+                                    <button class="btn btn-secondary popup-button"
                                         onclick="showPopup('popup-scene-8')">Next</button>
                                 </div>
 
                                 <!-- you scene 3 -->
                                 <div id="popup-scene-11" class="popup">
-                                    <p class="you-scene">You : "I have solution."</p>
-                                    <button class="btn btn-danger popup-button"
+                                    <p class="you-scene">You : I have a solution.</p>
+                                    <button class="btn btn-secondary popup-button"
                                         onclick="showPopup('popup-scene-12')">Next</button>
                                 </div>
                                 <!-- yo
                                     u scene 4 -->
                                 <div id="popup-scene-15" class="popup">
-                                    <p class="you-scene">You : "I have solution."</p>
-                                    <button class="btn btn-danger popup-button"
+                                    <p class="you-scene">You : I have a solution.</p>
+                                    <button class="btn btn-secondary popup-button"
                                         onclick="showPopup('popup-scene-16')">Next</button>
                                 </div>
 
                                 <!-- you scene 5 -->
                                 <div id="popup-scene-19" class="popup">
-                                    <p class="you-scene">You : "I have solution."</p>
-                                    <button class="btn btn-danger popup-button"
+                                    <p class="you-scene">You : I have a solution.</p>
+                                    <button class="btn btn-secondary popup-button"
                                         onclick="showPopup('popup-scene-20')">Next</button>
                                 </div>
 
                                 <!-- you scene 6 -->
                                 <div id="popup-scene-23" class="popup">
-                                    <p class="you-scene">You : "I have solution."</p>
-                                    <button class="btn btn-danger popup-button"
+                                    <p class="you-scene">You : I have a solution.</p>
+                                    <button class="btn btn-secondary popup-button"
                                         onclick="showPopup('popup-scene-24')">Next</button>
                                 </div>
                                 <!-- you scene 7 -->
                                 <div id="popup-scene-27" class="popup">
-                                    <p class="you-scene">You : "I have solution."</p>
-                                    <button class="btn btn-danger popup-button"
+                                    <p class="you-scene">You : I have a solution.</p>
+                                    <button class="btn btn-secondary popup-button"
                                         onclick="showPopup('popup-scene-28')">Next</button>
                                 </div>
                             </div>
@@ -315,14 +374,17 @@
                     <div class="col-md-12">
 
                         <!--  Question 1 -->
-                        <div id="popup-scene-4" class="popup">
+                        <div id="popup-scene-4" class="popup question-box">
+                            <div class="customer-requirement">
+                                <h5 class="customer-name mb-0"><strong>📋 Customer Requirement: Hip implant and Knee joint</strong></h5>
+                            </div>
                             <p>Your material will need
-                                <select id="properties-3">
+                                <select id="properties-1">
                                     <option value="">Select properties...</option>
                                     <option
-                                        value="Elastic modulus matching with bone, Biocompatibility, Higher corrosion resistance">
-                                        Elastic modulus matching with bone, Biocompatibility, Higher corrosion
-                                        resistance</option>
+                                        value="Higher strength, wear resistance, excellent corrosion resistance, High surface hardness">
+                                        Higher strength, wear resistance, excellent corrosion resistance, High surface
+                                        hardness</option>
                                     <option
                                         value="Light barrier, non-toxicity, oil resistance, tastelessness, water resistance, high and low temperature resistance">
                                         Light barrier, non-toxicity, oil resistance, tastelessness, water resistance,
@@ -332,9 +394,7 @@
                                         value="Low melting point, higher malleability, strength, corrosion resistance, and formability">
                                         Low melting point, higher malleability, strength, corrosion resistance, and
                                         formability</option>
-                                    <option value="Higher sensitivity to shock, friction, and electrical current flow">
-                                        Higher sensitivity to
-                                        shock, friction, and electrical current flow</option>
+
                                     <option value="Higher thermal conductivity, Higher corrosion resistance">Higher
                                         thermal conductivity,
                                         Higher corrosion resistance</option>
@@ -343,39 +403,46 @@
                                         Excellent cold and hot working properties, higher corrosion resistance, and
                                         better machinability,
                                         lightweight</option>
+                                    <option value="Higher sensitivity to shock, friction, and electrical current flow">
+                                        Higher sensitivity to
+                                        shock, friction, and electrical current flow</option>
+
                                     <option
-                                        value="Higher strength, wear resistance, excellent corrosion resistance, High surface hardness">
-                                        Higher strength, wear resistance, excellent corrosion resistance, High surface
-                                        hardness</option>
+                                        value="Elastic modulus matching with bone, Biocompatibility, Higher corrosion resistance">
+                                        Elastic modulus matching with bone, Biocompatibility, Higher corrosion
+                                        resistance</option>
 
                                 </select> Properties.
                             </p>
                             <p>Use <select id="metal-1">
                                     <option value="">Select metal/alloy...</option>
-                                    <option value="Ti-alloy">Cartridge brass</option>
-                                    <option value="Aluminium-foils">Gliding metal</option>
-                                    <option value="Cartridge-brass">Ti-alloy</option>
-                                    <option value="Gliding-metal">Commercial Bronze</option>
-                                    <option value="Admiralty-brass">Aluminium foils</option>
-                                    <option value="Commercial-Bronze">Manganese bronze</option>
-                                    <option value="Manganese-bronze">Admiralty brass</option>
+                                    <option value="Aluminium-foils">Aluminium foils</option>
+                                    <option value="Admiralty-brass">Admiralty brass</option>
+                                    <option value="Ti-alloy">Ti-alloy</option>
+                                    <option value="Gliding-metal">Gliding metal</option>
+                                    <option value="Cartridge-brass">Cartridge brass</option>
+                                    <option value="Manganese-bronze">Manganese bronze</option>
+                                    <option value="Commercial-Bronze">Commercial Bronze</option>
                                 </select>.</p>
 
-                            <button class="btn btn-danger popup-button"
-                                onclick="checkSolution('popup-scene-4', 'popup-scene-5', 'properties-3', 'metal-1')">
+                            <button class="btn btn-secondary popup-button"
+                                onclick="checkSolution('popup-scene-4', 'popup-scene-5', 'properties-1', 'metal-1')">
                                 Submit & Next</button>
 
                             <p class="error-message" id="result1"></p>
                         </div>
 
                         <!-- Question 2 -->
-                        <div id="popup-scene-8" class="popup">
-                            <p>Your material will need <select id="properties-4">
+                        <div id="popup-scene-8" class="popup question-box">
+                            <div class="customer-requirement">
+                                <h5 class="customer-name mb-0"><strong>📋 Customer Requirement: Food packaging</strong></h5>
+                            </div>
+                            <p>Your material will need <select id="properties-2">
                                     <option value="">Select properties...</option>
                                     <option
-                                        value="Elastic modulus matching with bone, Biocompatibility, Higher corrosion resistance">
-                                        Elastic modulus matching with bone, Biocompatibility, Higher corrosion
-                                        resistance</option>
+                                        value="Higher strength, wear resistance, excellent corrosion resistance, High surface hardness">
+                                        Higher strength, wear resistance, excellent corrosion resistance, High surface
+                                        hardness</option>
                                     <option
                                         value="Light barrier, non-toxicity, oil resistance, tastelessness, water resistance, high and low temperature resistance">
                                         Light barrier, non-toxicity, oil resistance, tastelessness, water resistance,
@@ -385,9 +452,7 @@
                                         value="Low melting point, higher malleability, strength, corrosion resistance, and formability">
                                         Low melting point, higher malleability, strength, corrosion resistance, and
                                         formability</option>
-                                    <option value="Higher sensitivity to shock, friction, and electrical current flow">
-                                        Higher sensitivity to
-                                        shock, friction, and electrical current flow</option>
+
                                     <option value="Higher thermal conductivity, Higher corrosion resistance">Higher
                                         thermal conductivity,
                                         Higher corrosion resistance</option>
@@ -396,136 +461,156 @@
                                         Excellent cold and hot working properties, higher corrosion resistance, and
                                         better machinability,
                                         lightweight</option>
+                                    <option value="Higher sensitivity to shock, friction, and electrical current flow">
+                                        Higher sensitivity to
+                                        shock, friction, and electrical current flow</option>
+
                                     <option
-                                        value="Higher strength, wear resistance, excellent corrosion resistance, High surface hardness">
-                                        Higher strength, wear resistance, excellent corrosion resistance, High surface
-                                        hardness</option>
+                                        value="Elastic modulus matching with bone, Biocompatibility, Higher corrosion resistance">
+                                        Elastic modulus matching with bone, Biocompatibility, Higher corrosion
+                                        resistance</option>
+
 
                                 </select> Properties.</p>
                             <p>Use <select id="metal-2">
-                                    <option value="">Select metal/alloy...</option>
-                                    <option value="Ti-alloy">Cartridge brass</option>
-                                    <option value="Aluminium-foils">Gliding metal</option>
-                                    <option value="Cartridge-brass">Ti-alloy</option>
-                                    <option value="Gliding-metal">Commercial Bronze</option>
-                                    <option value="Admiralty-brass">Aluminium foils</option>
-                                    <option value="Commercial-Bronze">Manganese bronze</option>
-                                    <option value="Manganese-bronze">Admiralty brass</option>
+                                <option value="">Select metal/alloy...</option>
+                                <option value="Aluminium-foils">Aluminium foils</option>
+                                <option value="Admiralty-brass">Admiralty brass</option>
+                                <option value="Ti-alloy">Ti-alloy</option>
+                                <option value="Gliding-metal">Gliding metal</option>
+                                <option value="Cartridge-brass">Cartridge brass</option>
+                                <option value="Manganese-bronze">Manganese bronze</option>
+                                <option value="Commercial-Bronze">Commercial Bronze</option>
                                 </select>.</p>
-                            <button class="btn btn-danger popup-button"
-                                onclick="checkSolution('popup-scene-8', 'popup-scene-9', 'properties-4', 'metal-2')">Submit
+                            <button class="btn btn-secondary popup-button"
+                                onclick="checkSolution('popup-scene-8', 'popup-scene-9', 'properties-2', 'metal-2')">Submit
                                 & Next</button>
                             <p class="error-message" id="result2"></p>
                         </div>
 
                         <!-- Question 3 -->
-                        <div id="popup-scene-12" class="popup">
-                            <p>Your material will need <select id="properties-1">
+                        <div id="popup-scene-12" class="popup question-box">
+                            <div class="customer-requirement">
+                                <h5 class="customer-name mb-0"><strong>📋 Customer Requirement: Plumbing components</strong></h5>
+                            </div>
+                            <p>Your material will need <select id="properties-3">
                                     <option value="">Select properties...</option>
                                     <option
-                                        value="Elastic modulus matching with bone, Biocompatibility, Higher corrosion resistance">
-                                        Elastic modulus matching with bone, Biocompatibility, Higher corrosion
-                                        resistance</option>
-                                    <option
-                                        value="Light barrier, non-toxicity, oil resistance, tastelessness, water resistance, high and low temperature resistance">
-                                        Light barrier, non-toxicity, oil resistance, tastelessness, water resistance,
-                                        high and low
-                                        temperature resistance</option>
-                                    <option
-                                        value="Low melting point, higher malleability, strength, corrosion resistance, and formability">
-                                        Low melting point, higher malleability, strength, corrosion resistance, and
-                                        formability</option>
-                                    <option value="Higher sensitivity to shock, friction, and electrical current flow">
-                                        Higher sensitivity to
-                                        shock, friction, and electrical current flow</option>
-                                    <option value="Higher thermal conductivity, Higher corrosion resistance">Higher
-                                        thermal conductivity,
-                                        Higher corrosion resistance</option>
-                                    <option
-                                        value="Excellent cold and hot working properties, higher corrosion resistance, and better machinability, lightweight">
-                                        Excellent cold and hot working properties, higher corrosion resistance, and
-                                        better machinability,
-                                        lightweight</option>
-                                    <option
-                                        value="Higher strength, wear resistance, excellent corrosion resistance, High surface hardness">
-                                        Higher strength, wear resistance, excellent corrosion resistance, High surface
-                                        hardness</option>
+                                    value="Higher strength, wear resistance, excellent corrosion resistance, High surface hardness">
+                                    Higher strength, wear resistance, excellent corrosion resistance, High surface
+                                    hardness</option>
+                                <option
+                                    value="Light barrier, non-toxicity, oil resistance, tastelessness, water resistance, high and low temperature resistance">
+                                    Light barrier, non-toxicity, oil resistance, tastelessness, water resistance,
+                                    high and low
+                                    temperature resistance</option>
+                                <option
+                                    value="Low melting point, higher malleability, strength, corrosion resistance, and formability">
+                                    Low melting point, higher malleability, strength, corrosion resistance, and
+                                    formability</option>
+
+                                <option value="Higher thermal conductivity, Higher corrosion resistance">Higher
+                                    thermal conductivity,
+                                    Higher corrosion resistance</option>
+                                <option
+                                    value="Excellent cold and hot working properties, higher corrosion resistance, and better machinability, lightweight">
+                                    Excellent cold and hot working properties, higher corrosion resistance, and
+                                    better machinability,
+                                    lightweight</option>
+                                <option value="Higher sensitivity to shock, friction, and electrical current flow">
+                                    Higher sensitivity to
+                                    shock, friction, and electrical current flow</option>
+
+                                <option
+                                    value="Elastic modulus matching with bone, Biocompatibility, Higher corrosion resistance">
+                                    Elastic modulus matching with bone, Biocompatibility, Higher corrosion
+                                    resistance</option>
+
 
                                 </select> Properties.</p>
                             <p>Use <select id="metal-3">
-                                    <option value="">Select metal/alloy...</option>
-                                    <option value="Ti-alloy">Cartridge brass</option>
-                                    <option value="Aluminium-foils">Gliding metal</option>
-                                    <option value="Cartridge-brass">Ti-alloy</option>
-                                    <option value="Gliding-metal">Commercial Bronze</option>
-                                    <option value="Admiralty-brass">Aluminium foils</option>
-                                    <option value="Commercial-Bronze">Manganese bronze</option>
-                                    <option value="Manganese-bronze">Admiralty brass</option>
+                                <option value="">Select metal/alloy...</option>
+                                <option value="Aluminium-foils">Aluminium foils</option>
+                                <option value="Admiralty-brass">Admiralty brass</option>
+                                <option value="Ti-alloy">Ti-alloy</option>
+                                <option value="Gliding-metal">Gliding metal</option>
+                                <option value="Cartridge-brass">Cartridge brass</option>
+                                <option value="Manganese-bronze">Manganese bronze</option>
+                                <option value="Commercial-Bronze">Commercial Bronze</option>
                                 </select>.</p>
-                            <button class="btn btn-danger popup-button"
-                                onclick="checkSolution('popup-scene-12', 'popup-scene-13', 'properties-1', 'metal-3')">Submit
+                            <button class="btn btn-secondary popup-button"
+                                onclick="checkSolution('popup-scene-12', 'popup-scene-13', 'properties-3', 'metal-3')">Submit
                                 & Next</button>
                             <p class="error-message" id="result3"></p>
                         </div>
 
                         <!-- Question 4 -->
-                        <div id="popup-scene-16" class="popup">
-                            <p>Your material will need <select id="properties-6">
+                        <div id="popup-scene-16" class="popup question-box">
+                            <div class="customer-requirement">
+                                <h5 class="customer-name mb-0"><strong>📋 Customer Requirement: Fuse caps</strong></h5>
+                            </div>
+                            <p>Your material will need <select id="properties-4">
                                     <option value="">Select properties...</option>
                                     <option
-                                        value="Elastic modulus matching with bone, Biocompatibility, Higher corrosion resistance">
-                                        Elastic modulus matching with bone, Biocompatibility, Higher corrosion
-                                        resistance</option>
-                                    <option
-                                        value="Light barrier, non-toxicity, oil resistance, tastelessness, water resistance, high and low temperature resistance">
-                                        Light barrier, non-toxicity, oil resistance, tastelessness, water resistance,
-                                        high and low
-                                        temperature resistance</option>
-                                    <option
-                                        value="Low melting point, higher malleability, strength, corrosion resistance, and formability">
-                                        Low melting point, higher malleability, strength, corrosion resistance, and
-                                        formability</option>
-                                    <option value="Higher sensitivity to shock, friction, and electrical current flow">
-                                        Higher sensitivity to
-                                        shock, friction, and electrical current flow</option>
-                                    <option value="Higher thermal conductivity, Higher corrosion resistance">Higher
-                                        thermal conductivity,
-                                        Higher corrosion resistance</option>
-                                    <option
-                                        value="Excellent cold and hot working properties, higher corrosion resistance, and better machinability, lightweight">
-                                        Excellent cold and hot working properties, higher corrosion resistance, and
-                                        better machinability,
-                                        lightweight</option>
-                                    <option
-                                        value="Higher strength, wear resistance, excellent corrosion resistance, High surface hardness">
-                                        Higher strength, wear resistance, excellent corrosion resistance, High surface
-                                        hardness</option>
+                                    value="Higher strength, wear resistance, excellent corrosion resistance, High surface hardness">
+                                    Higher strength, wear resistance, excellent corrosion resistance, High surface
+                                    hardness</option>
+                                <option
+                                    value="Light barrier, non-toxicity, oil resistance, tastelessness, water resistance, high and low temperature resistance">
+                                    Light barrier, non-toxicity, oil resistance, tastelessness, water resistance,
+                                    high and low
+                                    temperature resistance</option>
+                                <option
+                                    value="Low melting point, higher malleability, strength, corrosion resistance, and formability">
+                                    Low melting point, higher malleability, strength, corrosion resistance, and
+                                    formability</option>
+
+                                <option value="Higher thermal conductivity, Higher corrosion resistance">Higher
+                                    thermal conductivity,
+                                    Higher corrosion resistance</option>
+                                <option
+                                    value="Excellent cold and hot working properties, higher corrosion resistance, and better machinability, lightweight">
+                                    Excellent cold and hot working properties, higher corrosion resistance, and
+                                    better machinability,
+                                    lightweight</option>
+                                <option value="Higher sensitivity to shock, friction, and electrical current flow">
+                                    Higher sensitivity to
+                                    shock, friction, and electrical current flow</option>
+
+                                <option
+                                    value="Elastic modulus matching with bone, Biocompatibility, Higher corrosion resistance">
+                                    Elastic modulus matching with bone, Biocompatibility, Higher corrosion
+                                    resistance</option>
+
 
                                 </select> Properties.</p>
                             <p>Use <select id="metal-4">
-                                    <option value="">Select metal/alloy...</option>
-                                    <option value="Ti-alloy">Cartridge brass</option>
-                                    <option value="Aluminium-foils">Gliding metal</option>
-                                    <option value="Cartridge-brass">Ti-alloy</option>
-                                    <option value="Gliding-metal">Commercial Bronze</option>
-                                    <option value="Admiralty-brass">Aluminium foils</option>
-                                    <option value="Commercial-Bronze">Manganese bronze</option>
-                                    <option value="Manganese-bronze">Admiralty brass</option>
+                                <option value="">Select metal/alloy...</option>
+                                <option value="Aluminium-foils">Aluminium foils</option>
+                                <option value="Admiralty-brass">Admiralty brass</option>
+                                <option value="Ti-alloy">Ti-alloy</option>
+                                <option value="Gliding-metal">Gliding metal</option>
+                                <option value="Cartridge-brass">Cartridge brass</option>
+                                <option value="Manganese-bronze">Manganese bronze</option>
+                                <option value="Commercial-Bronze">Commercial Bronze</option>
                                 </select>.</p>
-                            <button class="btn btn-danger popup-button"
-                                onclick="checkSolution('popup-scene-16', 'popup-scene-17', 'properties-6', 'metal-4')">Submit
+                            <button class="btn btn-secondary popup-button"
+                                onclick="checkSolution('popup-scene-16', 'popup-scene-17', 'properties-4', 'metal-4')">Submit
                                 & Next</button>
                             <p class="error-message" id="result4"></p>
                         </div>
 
                         <!-- Question 5 -->
-                        <div id="popup-scene-20" class="popup">
-                            <p>Your material will need <select id="properties-2">
+                        <div id="popup-scene-20" class="popup question-box">
+                            <div class="customer-requirement">
+                                <h5 class="customer-name mb-0"><strong>📋 Customer Requirement: Condenser cooler</strong></h5>
+                            </div>
+                            <p>Your material will need <select id="properties-5">
                                     <option value="">Select properties...</option>
                                     <option
-                                        value="Elastic modulus matching with bone, Biocompatibility, Higher corrosion resistance">
-                                        Elastic modulus matching with bone, Biocompatibility, Higher corrosion
-                                        resistance</option>
+                                        value="Higher strength, wear resistance, excellent corrosion resistance, High surface hardness">
+                                        Higher strength, wear resistance, excellent corrosion resistance, High surface
+                                        hardness</option>
                                     <option
                                         value="Light barrier, non-toxicity, oil resistance, tastelessness, water resistance, high and low temperature resistance">
                                         Light barrier, non-toxicity, oil resistance, tastelessness, water resistance,
@@ -535,9 +620,7 @@
                                         value="Low melting point, higher malleability, strength, corrosion resistance, and formability">
                                         Low melting point, higher malleability, strength, corrosion resistance, and
                                         formability</option>
-                                    <option value="Higher sensitivity to shock, friction, and electrical current flow">
-                                        Higher sensitivity to
-                                        shock, friction, and electrical current flow</option>
+
                                     <option value="Higher thermal conductivity, Higher corrosion resistance">Higher
                                         thermal conductivity,
                                         Higher corrosion resistance</option>
@@ -546,31 +629,39 @@
                                         Excellent cold and hot working properties, higher corrosion resistance, and
                                         better machinability,
                                         lightweight</option>
+                                    <option value="Higher sensitivity to shock, friction, and electrical current flow">
+                                        Higher sensitivity to
+                                        shock, friction, and electrical current flow</option>
+
                                     <option
-                                        value="Higher strength, wear resistance, excellent corrosion resistance, High surface hardness">
-                                        Higher strength, wear resistance, excellent corrosion resistance, High surface
-                                        hardness</option>
+                                        value="Elastic modulus matching with bone, Biocompatibility, Higher corrosion resistance">
+                                        Elastic modulus matching with bone, Biocompatibility, Higher corrosion
+                                        resistance</option>
+
 
                                 </select> Properties.</p>
                             <p>Use <select id="metal-5">
-                                    <option value="">Select metal/alloy...</option>
-                                    <option value="Ti-alloy">Cartridge brass</option>
-                                    <option value="Aluminium-foils">Gliding metal</option>
-                                    <option value="Cartridge-brass">Ti-alloy</option>
-                                    <option value="Gliding-metal">Commercial Bronze</option>
-                                    <option value="Admiralty-brass">Aluminium foils</option>
-                                    <option value="Commercial-Bronze">Manganese bronze</option>
-                                    <option value="Manganese-bronze">Admiralty brass</option>
+                                <option value="">Select metal/alloy...</option>
+                                <option value="Aluminium-foils">Aluminium foils</option>
+                                <option value="Admiralty-brass">Admiralty brass</option>
+                                <option value="Ti-alloy">Ti-alloy</option>
+                                <option value="Gliding-metal">Gliding metal</option>
+                                <option value="Cartridge-brass">Cartridge brass</option>
+                                <option value="Manganese-bronze">Manganese bronze</option>
+                                <option value="Commercial-Bronze">Commercial Bronze</option>
                                 </select>.</p>
-                            <button class="btn btn-danger popup-button"
-                                onclick="checkSolution('popup-scene-20', 'popup-scene-21', 'properties-2', 'metal-5')">Submit
+                            <button class="btn btn-secondary popup-button"
+                                onclick="checkSolution('popup-scene-20', 'popup-scene-21', 'properties-5', 'metal-5')">Submit
                                 & Next</button>
                             <p class="error-message" id="result5"></p>
                         </div>
 
                         <!-- Question 6 -->
-                        <div id="popup-scene-24" class="popup">
-                            <p>Your material will need <select id="properties-7">
+                        <div id="popup-scene-24" class="popup question-box">
+                            <div class="customer-requirement">
+                                <h5 class="customer-name mb-0"><strong>📋 Customer Requirement: Lipstick cases</strong></h5>
+                            </div>
+                            <p>Your material will need <select id="properties-6">
                                     <option value="">Select properties...</option>
                                     <option
                                         value="Elastic modulus matching with bone, Biocompatibility, Higher corrosion resistance">
@@ -604,23 +695,26 @@
                                 </select> Properties.</p>
                             <p>Use <select id="metal-6">
                                     <option value="">Select metal/alloy...</option>
-                                    <option value="Ti-alloy">Cartridge brass</option>
-                                    <option value="Aluminium-foils">Gliding metal</option>
-                                    <option value="Cartridge-brass">Ti-alloy</option>
-                                    <option value="Gliding-metal">Commercial Bronze</option>
-                                    <option value="Admiralty-brass">Aluminium foils</option>
-                                    <option value="Commercial-Bronze">Manganese bronze</option>
-                                    <option value="Manganese-bronze">Admiralty brass</option>
+                                    <option value="Ti-alloy">Ti-alloy</option>
+                                    <option value="Aluminium-foils">Aluminium foils</option>
+                                    <option value="Cartridge-brass">Cartridge brass</option>
+                                    <option value="Gliding-metal">Gliding metal</option>
+                                    <option value="Admiralty-brass">Admiralty brass</option>
+                                    <option value="Commercial-Bronze">Commercial Bronze</option>
+                                    <option value="Manganese-bronze">Manganese bronze</option>
                                 </select>.</p>
-                            <button class="btn btn-danger popup-button"
-                                onclick="checkSolution('popup-scene-24', 'popup-scene-25', 'properties-7', 'metal-6')">Submit
+                            <button class="btn btn-secondary popup-button"
+                                onclick="checkSolution('popup-scene-24', 'popup-scene-25', 'properties-6', 'metal-6')">Submit
                                 & Next</button>
                             <p class="error-message" id="result6"></p>
                         </div>
 
                         <!-- Question 7 -->
-                        <div id="popup-scene-28" class="popup">
-                            <p>Your material will need <select id="properties-5">
+                        <div id="popup-scene-28" class="popup question-box">
+                            <div class="customer-requirement">
+                                <h5 class="customer-name mb-0"><strong>📋 Customer Requirement: Bearings</strong></h5>
+                            </div>
+                            <p>Your material will need <select id="properties-7">
                                     <option value="">Select properties...</option>
                                     <option
                                         value="Elastic modulus matching with bone, Biocompatibility, Higher corrosion resistance">
@@ -654,16 +748,16 @@
                                 </select> Properties.</p>
                             <p>Use <select id="metal-7">
                                     <option value="">Select metal/alloy...</option>
-                                    <option value="Ti-alloy">Cartridge brass</option>
-                                    <option value="Aluminium-foils">Gliding metal</option>
-                                    <option value="Cartridge-brass">Ti-alloy</option>
-                                    <option value="Gliding-metal">Commercial Bronze</option>
-                                    <option value="Admiralty-brass">Aluminium foils</option>
-                                    <option value="Commercial-Bronze">Manganese bronze</option>
-                                    <option value="Manganese-bronze">Admiralty brass</option>
+                                    <option value="Manganese-bronze">Manganese bronze</option>
+                                    <option value="Aluminium-foils">Aluminium foils</option>
+                                    <option value="Commercial-Bronze">Commercial Bronze</option>
+                                    <option value="Gliding-metal">Gliding metal</option>
+                                    <option value="Cartridge-brass">Cartridge brass</option>
+                                    <option value="Admiralty-brass">Admiralty brass</option>
+                                    <option value="Ti-alloy">Ti-alloy</option>
                                 </select>.</p>
-                            <button class="btn btn-danger popup-button"
-                                onclick="checkSolution('popup-scene-28', 'popup-scene-29', 'properties-5', 'metal-7')">Submit
+                            <button class="btn btn-secondary popup-button"
+                                onclick="checkSolution('popup-scene-28', 'popup-scene-29', 'properties-7', 'metal-7')">Submit
                                 & Next</button>
                             <p class="error-message" id="result7"></p>
                         </div>
@@ -696,6 +790,7 @@
                 popups[i].style.display = 'none';
             }
             document.getElementById(popupId).style.display = 'block';
+
         }
 
 
@@ -718,6 +813,39 @@
             var selectedProperties = propertiesSelect.value;
             var selectedMetal = metalSelect.value;
 
+            // Check if selections are empty
+            if (!selectedProperties || !selectedMetal) {
+                var errorMsg = "Please select both properties and metal/alloy before submitting.";
+                if (currentPopupId === 'popup-scene-4') {
+                    result1.textContent = errorMsg;
+                    result1.className = "error-message";
+                }
+                else if (currentPopupId === 'popup-scene-8') {
+                    result2.textContent = errorMsg;
+                    result2.className = "error-message";
+                }
+                else if (currentPopupId === 'popup-scene-12') {
+                    result3.textContent = errorMsg;
+                    result3.className = "error-message";
+                }
+                else if (currentPopupId === 'popup-scene-16') {
+                    result4.textContent = errorMsg;
+                    result4.className = "error-message";
+                }
+                else if (currentPopupId === 'popup-scene-20') {
+                    result5.textContent = errorMsg;
+                    result5.className = "error-message";
+                }
+                else if (currentPopupId === 'popup-scene-24') {
+                    result6.textContent = errorMsg;
+                    result6.className = "error-message";
+                }
+                else if (currentPopupId === 'popup-scene-28') {
+                    result7.textContent = errorMsg;
+                    result7.className = "error-message";
+                }
+                return;
+            }
 
             // Check if the user's selections are correct
             if (
@@ -732,24 +860,31 @@
                 // Display a success message
                 if (currentPopupId === 'popup-scene-4') {
                     result1.textContent = "You are correct!";
+                    result1.className = "success-message";
                 }
                 else if (currentPopupId === 'popup-scene-8') {
-                    result2.textContent = "You are correct!";
+                    result2.textContent = "Great Job !";
+                    result2.className = "success-message";
                 }
                 else if (currentPopupId === 'popup-scene-12') {
-                    result3.textContent = "You are correct!";
+                    result3.textContent = "Good !";
+                    result3.className = "success-message";
                 }
                 else if (currentPopupId === 'popup-scene-16') {
-                    result4.textContent = "You are correct!";
+                    result4.textContent = "Correct answer !";
+                    result4.className = "success-message";
                 }
                 else if (currentPopupId === 'popup-scene-20') {
-                    result5.textContent = "You are correct!";
+                    result5.textContent = "Great job !";
+                    result5.className = "success-message";
                 }
                 else if (currentPopupId === 'popup-scene-24') {
-                    result6.textContent = "You are correct!";
+                    result6.textContent = "Your choice is correct !";
+                    result6.className = "success-message";
                 }
                 else if (currentPopupId === 'popup-scene-28') {
-                    result7.textContent = "You are correct!";
+                    result7.textContent = "Great choice !";
+                    result7.className = "success-message";
                 }
 
                 // Wait for 2 seconds and then proceed to the next question
@@ -757,25 +892,33 @@
                     // Clear the success message
                     if (currentPopupId === 'popup-scene-4') {
                         result1.textContent = "";
+                        result1.className = "";
                     }
                     else if (currentPopupId === 'popup-scene-8') {
                         result2.textContent = "";
+                        result2.className = "";
                     }
                     else if (currentPopupId === 'popup-scene-12') {
                         result3.textContent = "";
+                        result3.className = "";
                     }
                     else if (currentPopupId === 'popup-scene-16') {
                         result4.textContent = "";
+                        result4.className = "";
                     }
                     else if (currentPopupId === 'popup-scene-20') {
                         result5.textContent = "";
+                        result5.className = "";
                     }
                     else if (currentPopupId === 'popup-scene-24') {
                         result6.textContent = "";
+                        result6.className = "";
                     }
                     else if (currentPopupId === 'popup-scene-28') {
                         result7.textContent = "";
+                        result7.className = "";
                     }
+
                     //  call next question 
                     showPopup(nextPopupId);
                 }, 2000); // 2000 milliseconds (2 seconds)
@@ -784,24 +927,31 @@
                 // Display an error message
                 if (currentPopupId === 'popup-scene-4') {
                     result1.textContent = "Your answer is incorrect. Please select the correct properties and metal.";
+                    result1.className = "error-message";
                 }
                 else if (currentPopupId === 'popup-scene-8') {
-                    result2.textContent = "Your answer is incorrect. Please select the correct properties and metal.";
+                    result2.textContent = "Oh! wrong choice . Please choose correct.";
+                    result2.className = "error-message";
                 }
                 else if (currentPopupId === 'popup-scene-12') {
-                    result3.textContent = "Your answer is incorrect. Please select the correct properties and metal.";
+                    result3.textContent = "Try again. Please select the correct properties and metal.";
+                    result3.className = "error-message";
                 }
                 else if (currentPopupId === 'popup-scene-16') {
-                    result4.textContent = "Your answer is incorrect. Please select the correct properties and metal.";
+                    result4.textContent = "Your choice is incorrect. Please select the correct properties and metal.";
+                    result4.className = "error-message";
                 }
                 else if (currentPopupId === 'popup-scene-20') {
                     result5.textContent = "Your answer is incorrect. Please select the correct properties and metal.";
+                    result5.className = "error-message";
                 }
                 else if (currentPopupId === 'popup-scene-24') {
                     result6.textContent = "Your answer is incorrect. Please select the correct properties and metal.";
+                    result6.className = "error-message";
                 }
                 else if (currentPopupId === 'popup-scene-28') {
                     result7.textContent = "Your answer is incorrect. Please select the correct properties and metal.";
+                    result7.className = "error-message";
                 }
             }
         }
