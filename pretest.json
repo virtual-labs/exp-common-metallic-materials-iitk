@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Brass is an alloy of",
+      "answers": {
+        "a": "Cu and Sn",
+        "b": "Cu and Zn",
+        "c": "Cu and Ni",
+        "d": "Cu and Fe"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Extraction of Titanium is done through",
+      "answers": {
+        "a": "Pidgeon’s process",
+        "b": "Bayer’s process",
+        "c": "Kroll’s process",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Annealing improves which property of the alloy system ",
+      "answers": {
+        "a": "Hardness",
+        "b": "Strength",
+        "c": "Ductility",
+        "d": "Fracture resistance"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Third most abundant element on earth",
+      "answers": {
+        "a": "Titanium",
+        "b": "Aluminium",
+        "c": "Copper",
+        "d": "Nickel"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. Famous heat treatment used in Al-4.5% Cu alloy is",
+      "answers": {
+        "a": "Water quenching",
+        "b": "Aging",
+        "c": "Normalizing",
+        "d": "Surface hardening"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
