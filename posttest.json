@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Composition of Muntz metal",
+      "answers": {
+        "a": "60Cu-40Zn",
+        "b": "90Cu-10Zn",
+        "c": "50Cu-50Zn",
+        "d": "70Cu-30Zn"
+      },
+      "explanations": {
+        "a": "This is the correct option. Muntz metal is a brass containing about 60% copper and 40% zinc.",
+        "b": "This is an incorrect option. This composition corresponds to gilding metal, not Muntz metal.",
+        "c": "This is an incorrect option. This composition is not commonly used due to poor workability.",
+        "d": "This is an incorrect option. This is cartridge brass, not Muntz metal."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. The alloy used for knee and hip joint implants",
+      "answers": {
+        "a": "Ti-4Al-6V",
+        "b": "Ti-6Al-4V",
+        "c": "Ti-3Al-3V",
+        "d": "Ti-2Al-4V"
+      },
+      "explanations": {
+        "a": "This is an incorrect option. This composition is not a standard biomedical titanium alloy.",
+        "b": "This is the correct option. Ti–6Al–4V is widely used for knee and hip implants due to its high strength, corrosion resistance, and biocompatibility.",
+        "c": "This is an incorrect option. This alloy is not commonly used for biomedical implant applications.",
+        "d": "This is an incorrect option. This composition does not correspond to a standard implant-grade titanium alloy."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Annealing twins are found in",
+      "answers": {
+        "a": "Aluminium",
+        "b": "Magnesium",
+        "c": "Copper",
+        "d": "Titanium"
+      },
+      "explanations": {
+        "a": "This is an incorrect option. Aluminium has high stacking fault energy, so annealing twins are rarely observed.",
+        "b": "This is an incorrect option. Magnesium has an HCP structure where deformation twinning dominates, not annealing twins.",
+        "c": "This is the correct option. Copper has an FCC structure with low stacking fault energy, making annealing twins common after annealing.",
+        "d": "This is an incorrect option. Titanium is HCP at room temperature and does not typically show annealing twins."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Casting is easier for nonferrous metals due to",
+      "answers": {
+        "a": "Higher melting point",
+        "b": "Lower melting point",
+        "c": "Both above",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "This is an incorrect option. Higher melting points make melting and casting more difficult, not easier.",
+        "b": "This is the correct option. Most non-ferrous metals have lower melting points, making them easier to melt and cast.",
+        "c": "Higher melting point does not aid casting, so this option is incorrect.",
+        "d": "Since a lower melting point is a valid reason, this option is incorrect."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. The addition of silicon in aluminium improves its",
+      "answers": {
+        "a": "Castability",
+        "b": "Wear resistance",
+        "c": "Both above",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "This is an incorrect option. Silicon does improve castability, but it is not the only property improved.",
+        "b": "This is an incorrect option. Silicon forms hard Si-rich phases in aluminium, which improve wear resistance. However, it is not the only property improved.",
+        "c": "This is the correct option. Silicon improves both castability and wear resistance in aluminium alloys.",
+        "d": "Since silicon improves both properties, this option is incorrect."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  ]
+}

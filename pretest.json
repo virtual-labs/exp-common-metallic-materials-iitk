@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Brass is an alloy of",
+      "answers": {
+        "a": "Cu and Sn",
+        "b": "Cu and Zn",
+        "c": "Cu and Ni",
+        "d": "Cu and Fe"
+      },
+      "explanations": {
+        "a": "This is an incorrect option. This combination forms bronze, not brass.",
+        "b": "This is the correct option. Brass is defined as an alloy of copper and zinc, giving good strength and corrosion resistance.",
+        "c": "This is an incorrect option. This forms cupronickel, commonly used in coins and marine applications.",
+        "d": "This is an incorrect option. Copper–iron alloys are not classified as brass and are rarely used due to poor mutual solubility."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Extraction of Titanium is done through",
+      "answers": {
+        "a": "Pidgeon’s process",
+        "b": "Bayer’s process",
+        "c": "Kroll’s process",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "This is an incorrect option. Pidgeon’s process is used for the extraction of magnesium, not titanium.",
+        "b": "This is an incorrect option. Bayer’s process is used for refining bauxite to alumina in aluminium extraction.",
+        "c": "This is the correct option. In the Kroll process, titanium is extracted by reducing TiCl<sub>4</sub> with magnesium in an inert atmosphere.",
+        "d": "This is an incorrect option because titanium is extracted by the Kroll process."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Annealing improves which property of the alloy system ",
+      "answers": {
+        "a": "Hardness",
+        "b": "Strength",
+        "c": "Ductility",
+        "d": "Fracture resistance"
+      },
+      "explanations": {
+        "a": "This is an incorrect option. Annealing generally reduces hardness by relieving internal stresses.",
+        "b": "This is an incorrect option. Annealing usually decreases strength due to softening of the alloy.",
+        "c": "This is the correct option. Annealing increases ductility by allowing recrystallization and grain growth.",
+        "d": "This is an incorrect option. While toughness may improve, annealing is primarily known for improving ductility."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. The third most abundant element in Earth’s crust",
+      "answers": {
+        "a": "Titanium",
+        "b": "Aluminium",
+        "c": "Copper",
+        "d": "Nickel"
+      },
+      "explanations": {
+        "a": "This is an incorrect option. Titanium is relatively abundant but ranks around 9<sup>th</sup> in the Earth’s crust, not third.",
+        "b": "This is the correct option. Aluminium is the third most abundant element in the Earth’s crust after oxygen and silicon.",
+        "c": "This is an incorrect option. Copper is a trace element in the Earth’s crust and far less abundant than aluminium.",
+        "d": "This is an incorrect option. Nickel is more abundant in the Earth’s core but is not among the top three elements in the crust."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. Famous heat treatment used in Al-4.5% Cu alloy is",
+      "answers": {
+        "a": "Water quenching",
+        "b": "Aging",
+        "c": "Normalizing",
+        "d": "Surface hardening"
+      },
+      "explanations": {
+        "a": "This is an incorrect option. Water quenching is only an intermediate step to retain a supersaturated solid solution, not the primary heat treatment.",
+        "b": "This is the correct option. Aging (precipitation hardening) is the famous heat treatment used in Al–Cu alloys to increase strength by forming fine precipitates.",
+        "c": "This is an incorrect option. Normalizing is mainly used for steels and is not applicable to aluminium alloys.",
+        "d": "This is an incorrect option. Surface hardening methods are generally used for steels and not for Al–Cu alloys."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
