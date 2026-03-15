@@ -1,5 +1,5 @@
 <b><font size="4">1 Introduction </font></b><br> The term non-ferrous alloys are used for those alloys which do not have iron as a base element. Generally, the non-ferrous alloys commonly used in engineering application are based on aluminium, copper, magnesium, titanium etc. The microstructures of these non-ferrous alloys are highly diversified in nature and are dependent on their composition and processing method. Understanding of these microstructures is crucial for tailoring material properties for specific applications in aerospace, automotives, and electrical industries.  <br><br>
-<b>The advantages of Non-ferrous alloys over ferrous alloys are as follows:</b><br> 
+<b>The advantages of non-ferrous alloys over ferrous alloys are as follows:</b><br> 
 * Good resistance to corrosion without special processes having to be carried out.<br> 
 * Low density and are hence used in manufacturing light weight components.<br>  
 * Manufacturing is easier as casting can be done because of their lower melting point. <br>  
@@ -33,7 +33,7 @@ Copper is essential for modern living. It delivers electricity and clean water i
 <image src="images/Picture4.png" width="250" height="250" alt=""><br>
 <b>Figure 2.</b> Microstructure of (a) annealed copper and (b) rolled copper.<br><br>
 Figure 2 (a) shows the microstructure of annealed copper whereas Figure 2 (b) shows the microstructure of rolled copper. Microstructure of annealed copper is characterized by larger, equiaxed grains, reduced dislocation density, and improved ductility and electrical conductivity. In addition to that copper also forms annealing twins in its microstructures during annealing. Annealing is a crucial process in the production of copper products for various industries, including electronics, construction, and transportation, where the desirable properties are softness, malleability, and high conductivity. Formation of annealing twins within the microstructure of copper can be explained by the atomic rearrangements and defect migrations, such as dislocations in the crystal lattice during annealing process. Twin formation reduces the overall energy of the system and relieves the stresses. Figure 2(b) shows the microstructure of the rolled copper that shows the presence of preferred textured orientation of grains along the rolling directions within the microstructure. It improves strength, mechanical hardness, reduces ductility. Furthermore, the degree of enhancement of the mechanical properties during rolling depends on the degree of deformation, initial rolling parameters, and initial conditions in copper. These factors affect the applications of copper including construction, electrical engineering, and manufacturing.<br><br>
-<b> 4 Brass and Bronze</b><br>
+<b> 4 Brass</b><br>
 
 Brass is a copper–zinc alloy, whereas bronze is a copper–tin alloy. Brass typically exhibits a two-phase microstructure comprising an alpha phase (copper-rich) and a beta phase (zinc-rich), with the relative proportions of these phases determining the alloy’s mechanical and physical properties. Various forms of brass exist, including alpha brass (approximately 36% zinc) and alpha–beta brass. Common commercial compositions include 60–40 brass (60 wt.% Cu, 40 wt.% Zn) and 70–30 brass, with zinc serving as the principal alloying element.<br>
 Figure 3 compares the microstructural features of 70-30 brass, 60-40 brass and bronze.<br><br>
@@ -72,14 +72,19 @@ The brasses which contain more than 36% of Zn form duplex microstructures with C
 
 <b> * Cast Brass:</b> Cast alloy consists of white needles of α in a matrix of β. Many other alloying elements are present in the alloy including Tin 1 to 6% and Pb 1 to 10% with Fe, Ni, Al. Leaded red brass (85Cu-5Sn-5Pb-5Zn) is an example of cast brass. Used for fair strength and good machinability properties. <br>
 
+<b> 5 Bronze</b><br>
+
 Bronze is a copper-based alloy primarily composed of copper (Cu) and tin (Sn), which may also contain up to 12 wt.% of additional elements such as aluminum (Al), silicon (Si), phosphorus (P), or manganese (Mn). The precise composition of bronze can vary widely, giving rise to a diverse range of alloys with tailored properties. Its unique combination of high strength, corrosion resistance, malleability, and wear resistance has made bronze a valuable material for both functional and artistic applications throughout history. Compared to brass, bronze generally exhibits superior mechanical properties, hardness, and surface wear resistance, while retaining the ability to be rolled into wires, rods, and sheets.<br>
-Several specialized bronze alloys have been developed to meet specific application requirements:<br><br>
-<b>•	Phosphor bronze (Cu-Sn-P):</b> contains 0.5–11% tin and 0.01–0.5% phosphorus, offering high strength, toughness, and excellent corrosion resistance.<br>
-<b>•	Silicon bronze (Cu-Si):</b> typically contains 1–4% silicon, 0.5–1% iron, and 0.25–1.25% manganese; small additions of lead (≈0.05%) improve machinability. These alloys combine high strength and toughness comparable to mild steel with the corrosion resistance of copper.<br>
-<b>•	Aluminum bronze (Cu-Al):</b> contains up to 11% aluminum, often supplemented with iron, nickel, or silicon to enhance strength, hardness, corrosion resistance, and machinability. These alloys maintain high strength at elevated temperatures and are commonly used in marine propellers, pump rotors, water turbines, and chemical industry components.<br>
-<b>•	Manganese bronze (Cu-Mn):</b> provides improved mechanical strength and wear resistance for heavy-duty applications such as bearings and bushings.<br>
+Several specialized bronze alloys have been developed to meet specific application requirements:<br>
+<b>5.1	Phosphor bronze (Cu-Sn-P):</b> contains 0.5–11% tin and 0.01–0.5% phosphorus, offering high strength, toughness, and excellent corrosion resistance.<br>
+
+<b>5.2	Silicon bronze (Cu-Si):</b> typically contains 1–4% silicon, 0.5–1% iron, and 0.25–1.25% manganese; small additions of lead (≈0.05%) improve machinability. These alloys combine high strength and toughness comparable to mild steel with the corrosion resistance of copper.<br>
+
+<b>5.3	Aluminum bronze (Cu-Al):</b> contains up to 11% aluminum, often supplemented with iron, nickel, or silicon to enhance strength, hardness, corrosion resistance, and machinability. These alloys maintain high strength at elevated temperatures and are commonly used in marine propellers, pump rotors, water turbines, and chemical industry components.<br>
+
+<b>5.4	Manganese bronze (Cu-Mn):</b> provides improved mechanical strength and wear resistance for heavy-duty applications such as bearings and bushings.<br>
 Microstructurally, bronze consists of a copper-rich α-matrix phase, which imparts ductility, malleability, and good electrical conductivity, along with a β-phase, visible as darker regions, that enhances the overall strength of the alloy. This combination of phases underlies the versatility of bronze, making it one of the most widely used copper alloys in engineering, marine, and artistic applications. Figure 3(c) illustrates this microstructure, clearly showing the α-matrix and the reinforcing β-phase within the alloy.<br><br>
-<b>5 Titanium and its Alloys</b><br>
+<b>6 Titanium and its Alloys</b><br>
 Titanium (Ti) is a lightweight, high-strength metal valued for its exceptional corrosion resistance, high melting point, biocompatibility, and excellent strength-to-weight ratio. Extracted primarily from ilmenite and rutile via the Kroll process, titanium exhibits two key crystallographic phases: the α-phase (HCP) stable at lower temperatures and the β-phase (BCC) stable at higher temperatures. The proportion of these phases, along with any intermetallic phases, can be controlled through alloying and heat treatment, enabling the development of α, β, or α+β titanium alloys with tailored mechanical properties.<br><br>
 <image src="images/Picture8.png" width="200" height="200" alt="">
 <image src="images/Picture9.png" width="200" height="200" alt="">
